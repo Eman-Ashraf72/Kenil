@@ -1,0 +1,217 @@
+:root{
+    --mainColor:#d63384 !important;
+}
+
+.nav-link {
+    color:white !important;
+    position: relative;
+}
+.underlineNav{
+    position: absolute;
+    width:50px;
+    height:3px;
+    background-color:var(--mainColor);
+    opacity: 0;
+    transition: 0.5s;
+}
+.nav-link:hover .underlineNav  {
+    opacity: 1;
+}
+.nav-link:hover{
+    color: #d63384 !important;
+}
+ .navContact{
+    background-color: transparent;
+    padding-left: 1rem;
+    padding-right: 1rem;
+} 
+.navContact:hover{
+    background-color: white;
+}
+.navbar{
+    position: fixed ;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    /* background-color: black; */
+    
+}
+#home{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) , url(../images/images02.jpg);
+      background-position: center 0px ;
+    background-size: cover; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white !important;
+
+}
+#home p h1{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+#home p{
+    line-height: 4rem !important;
+
+}
+.spacepragraph{
+    letter-spacing: 4px; 
+
+}
+.homePargrah{
+    font-size: 1.3125rem !important;
+}
+.animatiom h1{
+    line-height: 1.5rem !important;
+    font-weight: 600  !important;
+    font-size: 4.5rem !important;
+}
+ #home h1::after{
+    content: "";
+    animation: typing 3s infinite;
+}
+@keyframes typing {
+
+    0%{content: "|";}
+    4%{content: "e|";}
+    8%{content: "es|";}
+    12%{content: "esi|";}
+    16%{content: "esig|";}
+    20%{content: "esign|";}
+    24%{content: "esigne|";}
+    28%{content: "esigner|";}
+    32%{content: "esigne|";}
+    36%{content: "esign|";}
+    40%{content: "esig|";}
+    48%{content: "esi|";}
+    52%{content: "es |";}
+    56%{content: "e|";}
+    60%{content: "|";}
+}
+.homeButton{
+    background-color: var(--mainColor);
+    border: #d63384;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin:auto;
+    margin-left: 3rem;
+
+}
+.protfolioCaption p{
+    font-size: 1.125rem !important ;
+}
+.protfolioCaption h3::after{
+    content: "";
+    width: 80px;
+    height: 3px;
+    background-color: var(--mainColor);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%)
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+background-color: var(--mainColor);
+}
+.modalContent img{
+    width: 100%;
+    transition: 1s;
+}
+
+.imgCaption{
+    background-color: rgba(0,0,0,0.7);
+    opacity: 0;
+    transition: 1s;
+}
+.modalContent:hover .imgCaption{
+opacity: 1;
+}
+.modalContent:hover img{
+    transform:scale(1.1) ;
+}
+.ButtonModel{
+    border: none;
+    background-color: transparent;
+}
+.buttonSlider{
+    border: none;
+    background-color: transparent;
+}
+
+/* ===========================About============================ */
+.AboutColor{
+    color: var(--mainColor);
+}
+.AncorAbout{
+    color:var(--mainColor);
+}
+.ServicesContent i{
+    color: var(--mainColor);
+}
+
+.differentIcons{
+    color: var(--mainColor);
+}
+.iconSKILL{
+width: 70PX;
+height: 70PX;
+    border-radius: 50%;
+}
+.progress{
+    height: 10px;
+    background-color: darkslategrey;
+}
+.progress-bar{
+    width: 95% !important;
+    background-color: var(--mainColor) !important;
+}
+.prog2{
+    width: 65% !important;
+    background-color: var(--mainColor) !important;
+}
+.prog3{
+    width: 80% !important;
+    background-color: var(--mainColor) !important;
+}
+.prog4{
+    width: 75% !important;
+    background-color: var(--mainColor) !important;
+}
+/* ========ChooseContent============= */
+.ChooseContent{
+    background-color: var(--mainColor);
+}
+.ButtonChoose{
+    color: var(--mainColor);
+    transition: 0.5s;
+}
+.ButtonChoose:hover{
+    background-color: #d3d4d5 !important;
+}
+/* ============process========================== */
+.processNumb{
+    color: var(--mainColor);
+    width: 70px;
+    height: 70px;
+    border-radius: 50% ;
+    border: 2px solid #d63384 !important;
+    /* background-color: aqua; */
+}
+/* ===================================slider=============== */
+.carousel-item img{
+    width: 8%;
+
+}
+.buttonSlider{
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50% !important;
+    background-color: white !important;
+}
+.buttonSlider:hover{
+    background-color: #d63384 !important;
+}
